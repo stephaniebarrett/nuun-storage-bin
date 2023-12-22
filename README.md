@@ -1,6 +1,8 @@
 # nuun-storage-bin
 A 3D printable bin for storing NUUN tubes ([NUUN Hydration](https://nuunlife.com/) | [NUUN Hydration Canada](https://nuunlife.ca/)), using [Gridfinity Rebuilt OpenSCAD](https://github.com/kennetek/gridfinity-rebuilt-openscad/) for the base bin generation.
 
+Assuming [OpenSCAD](https://openscad.org/) is installed to /usr/bin, run generate.sh with parameters to generate your desired configuration.
+
 [<img src="./img/1x1r0.png" width="320">]()
 [<img src="./img/1x1r20.png" width="320">]()
 

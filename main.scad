@@ -40,21 +40,18 @@ style_tab = 5;
 
 h = height(gridz, gridz_define, style_lip, enable_zsnap);
 
-union()
+gridfinityInit(gridx, gridy, h, height_internal, length)
 {
-    gridfinityInit(gridx, gridy, h, height_internal, length)
+    for (x = [0:gridx-1])
     {
-        for (x = [0:gridx-1])
+        for (y = [0:gridy-1])
         {
-            for (y = [0:gridy-1])
+            cut_move(x, y, 1, 1)
             {
-                cut_move(x, y, 1, 1)
-                {
-                      rotate([Rotation,0,0]) translate([0,0,Elevation]) cylinder(d=30, h=50);
-                }
+                  rotate([Rotation,0,0]) translate([0,0,Elevation]) cylinder(d=30, h=50);
             }
         }
     }
-
-    gridfinityBase(gridx, gridy, length, div_base_x, div_base_y, Hole_Style);
 }
+
+gridfinityBase(gridx, gridy, length, div_base_x, div_base_y, Hole_Style);

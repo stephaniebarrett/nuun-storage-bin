@@ -70,4 +70,4 @@ png=$output'.png'
 echo "Rendering ${input} into ${stl} and ${png}."
 
 openscad -o $stl -D gridx=$gridx -D gridy=$gridy -D gridz=$gridz -D Hole_Style=$style -D Elevation=$elevation -D Rotation=$rotation -D Level_of_Detail=$quality $input
-openscad -o $png -D gridx=$gridx -D gridy=$gridy -D gridz=$gridz -D Hole_Style=$style -D Elevation=$elevation -D Rotation=$rotation -D Level_of_Detail=$quality --autocenter --viewall $input
+openscad -o $png -D gridx=$gridx -D gridy=$gridy -D gridz=$gridz -D Hole_Style=$style -D Elevation=$elevation -D Rotation=$rotation -D Level_of_Detail=$quality --autocenter --viewall --imgsize 1024,1024 $input
